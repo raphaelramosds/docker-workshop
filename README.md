@@ -20,6 +20,12 @@ Docker
 
 Hands-on
 - Instalação do Docker (Linux e Windows)
-- "Hello, World!" no Docker
+- "Hello, World!" 
 - Um container que apenas dorme: `docker run -d alpine sleep 3600` (perfeito para exemplificar que o container precisa de pelo menos um processo rodando, isto é, seu entrypoint) 
 - Produtor e consumidor: criando uma aplicação simples com dois containers se comunicando via socket TCP
+
+Publicando sua imagem: vamos aproveitar a imagem do "container que apenas dorme" para essa parte
+- Criando uma conta no Docker Hub
+- Tagueando sua imagem
+- Publicando sua imagem no Docker Hub
+- Baixando uma imagem do Docker Hub
