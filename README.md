@@ -4,7 +4,7 @@
 
 Introdução
 - O que é um sistema operacional? (discussão de kernel e aplicações)
-- O que é um processo?
+- O que é um processo? (exemplificar executando um script python de um loop que imprime Hello a cada 2s, e observá-lo no htop; o processo é um programa em execução!)
 - O que são distribuições Linux?
 - Formas de virtualização: hipervisores e containers
 - WSl (um caso especial): execute o comando uname -r no WSL e numa VM Hyper-V (com Linux Mint) para ver a implementação do kernel de cada uma
