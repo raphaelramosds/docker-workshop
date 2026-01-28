@@ -27,7 +27,7 @@ Abaixo usamos a aplicação `echo` para solicitar ao sistema operacional a escri
 /usr/sbin/echo "Mais uma linha" >> arquivo.txt
 ```
 
-O utilitário `which <aplicacao>` do Unix informa o caminho de um binário instalado no sistema operacional. No exemplo acima, o programa `echo` está localizado na pasta `/usr/sbin`
+O utilitário `which <aplicacao>` do UNIX informa o caminho de um binário instalado no sistema operacional. No exemplo acima, o programa `echo` está localizado na pasta `/usr/sbin`
 
 Caso queira visualizar as chamadas de sistema envolvidas no comando acima
 
