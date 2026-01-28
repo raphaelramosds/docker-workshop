@@ -12,6 +12,13 @@
 
 Um sistema operacional é composto por um **kernel** (núcleo) e aplicações. O usuário utiliza aplicações que se comunicam com o kernel através de chamadas de sistema.
 
+Alguns exemplos de chamadas de Sistema do UNIX
+
+- execv
+- read
+- open
+- close
+
 ### Exemplo: o binário `echo`
 
 Abaixo usamos a aplicação `echo` para solicitar ao sistema operacional a escrita de uma nova linha em um arquivo de texto e salvá-lo no disco
@@ -21,6 +28,12 @@ Abaixo usamos a aplicação `echo` para solicitar ao sistema operacional a escri
 ```
 
 O utilitário `which <aplicacao>` do Unix informa o caminho de um binário instalado no sistema operacional. No exemplo acima, o programa `echo` está localizado na pasta `/usr/sbin`
+
+Caso queira visualizar as chamadas de sistema envolvidas no comando acima
+
+```bash
+strace -f -o log_strace.txt sh -c 'echo "Mais uma linha" >> arquivo.txt'
+```
 
 ### O Kernel Linux
 

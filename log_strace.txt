@@ -1,0 +1,149 @@
+9272  execve("/usr/sbin/sh", ["sh", "-c", "echo \"Mais uma linha\" >> arquivo"...], 0x7ffe359a0188 /* 37 vars */) = 0
+9272  brk(NULL)                         = 0x633a9e075000
+9272  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f46b0d6f000
+9272  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+9272  openat(AT_FDCWD, "/usr/lib/wsl/lib/glibc-hwcaps/x86-64-v3/libreadline.so.8", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+9272  newfstatat(AT_FDCWD, "/usr/lib/wsl/lib/glibc-hwcaps/x86-64-v3/", 0x7ffe03eef1e0, 0) = -1 ENOENT (No such file or directory)
+9272  openat(AT_FDCWD, "/usr/lib/wsl/lib/glibc-hwcaps/x86-64-v2/libreadline.so.8", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+9272  newfstatat(AT_FDCWD, "/usr/lib/wsl/lib/glibc-hwcaps/x86-64-v2/", 0x7ffe03eef1e0, 0) = -1 ENOENT (No such file or directory)
+9272  openat(AT_FDCWD, "/usr/lib/wsl/lib/libreadline.so.8", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+9272  newfstatat(AT_FDCWD, "/usr/lib/wsl/lib/", {st_mode=S_IFDIR|0755, st_size=80, ...}, 0) = 0
+9272  openat(AT_FDCWD, "glibc-hwcaps/x86-64-v3/libreadline.so.8", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+9272  openat(AT_FDCWD, "glibc-hwcaps/x86-64-v2/libreadline.so.8", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+9272  openat(AT_FDCWD, "libreadline.so.8", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+9272  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+9272  fstat(3, {st_mode=S_IFREG|0644, st_size=138855, ...}) = 0
+9272  mmap(NULL, 138855, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f46b0d4d000
+9272  close(3)                          = 0
+9272  openat(AT_FDCWD, "/usr/lib/libreadline.so.8", O_RDONLY|O_CLOEXEC) = 3
+9272  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+9272  fstat(3, {st_mode=S_IFREG|0755, st_size=367640, ...}) = 0
+9272  mmap(NULL, 371816, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f46b0cf2000
+9272  mmap(0x7f46b0d08000, 204800, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16000) = 0x7f46b0d08000
+9272  mmap(0x7f46b0d3a000, 36864, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x48000) = 0x7f46b0d3a000
+9272  mmap(0x7f46b0d43000, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x51000) = 0x7f46b0d43000
+9272  mmap(0x7f46b0d4c000, 3176, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f46b0d4c000
+9272  close(3)                          = 0
+9272  openat(AT_FDCWD, "/usr/lib/wsl/lib/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+9272  openat(AT_FDCWD, "glibc-hwcaps/x86-64-v3/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+9272  openat(AT_FDCWD, "glibc-hwcaps/x86-64-v2/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+9272  openat(AT_FDCWD, "libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+9272  openat(AT_FDCWD, "/usr/lib/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+9272  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\360w\2\0\0\0\0\0"..., 832) = 832
+9272  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 896, 64) = 896
+9272  fstat(3, {st_mode=S_IFREG|0755, st_size=2145632, ...}) = 0
+9272  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 896, 64) = 896
+9272  mmap(NULL, 2169904, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f46b0a00000
+9272  mmap(0x7f46b0a24000, 1511424, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x24000) = 0x7f46b0a24000
+9272  mmap(0x7f46b0b95000, 454656, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x195000) = 0x7f46b0b95000
+9272  mmap(0x7f46b0c04000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x203000) = 0x7f46b0c04000
+9272  mmap(0x7f46b0c0a000, 31792, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f46b0c0a000
+9272  close(3)                          = 0
+9272  openat(AT_FDCWD, "/usr/lib/wsl/lib/libncursesw.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+9272  openat(AT_FDCWD, "glibc-hwcaps/x86-64-v3/libncursesw.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+9272  openat(AT_FDCWD, "glibc-hwcaps/x86-64-v2/libncursesw.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+9272  openat(AT_FDCWD, "libncursesw.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+9272  openat(AT_FDCWD, "/usr/lib/libncursesw.so.6", O_RDONLY|O_CLOEXEC) = 3
+9272  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+9272  fstat(3, {st_mode=S_IFREG|0755, st_size=453896, ...}) = 0
+9272  mmap(NULL, 453856, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f46b0c83000
+9272  mmap(0x7f46b0c90000, 290816, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xd000) = 0x7f46b0c90000
+9272  mmap(0x7f46b0cd7000, 90112, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x54000) = 0x7f46b0cd7000
+9272  mmap(0x7f46b0ced000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6a000) = 0x7f46b0ced000
+9272  close(3)                          = 0
+9272  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f46b0c81000
+9272  arch_prctl(ARCH_SET_FS, 0x7f46b0c81b80) = 0
+9272  set_tid_address(0x7f46b0c81e50)   = 9272
+9272  set_robust_list(0x7f46b0c81e60, 24) = 0
+9272  rseq(0x7f46b0c81ac0, 0x20, 0, 0x53053053) = 0
+9272  mprotect(0x7f46b0c04000, 16384, PROT_READ) = 0
+9272  mprotect(0x7f46b0ced000, 16384, PROT_READ) = 0
+9272  mprotect(0x7f46b0d43000, 12288, PROT_READ) = 0
+9272  mprotect(0x633a6f812000, 12288, PROT_READ) = 0
+9272  mprotect(0x7f46b0daa000, 8192, PROT_READ) = 0
+9272  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+9272  getrandom("\x38\x8e\x86\xf4\xba\x24\x53\xd6", 8, GRND_NONBLOCK) = 8
+9272  munmap(0x7f46b0d4d000, 138855)    = 0
+9272  openat(AT_FDCWD, "/dev/tty", O_RDWR|O_NONBLOCK) = 3
+9272  close(3)                          = 0
+9272  brk(NULL)                         = 0x633a9e075000
+9272  brk(0x633a9e096000)               = 0x633a9e096000
+9272  openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+9272  openat(AT_FDCWD, "/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = 3
+9272  fstat(3, {st_mode=S_IFREG|0644, st_size=2998, ...}) = 0
+9272  read(3, "# Locale name alias data base.\n#"..., 4096) = 2998
+9272  read(3, "", 4096)                 = 0
+9272  close(3)                          = 0
+9272  openat(AT_FDCWD, "/usr/lib/locale/en_US.UTF-8/LC_IDENTIFICATION", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+9272  openat(AT_FDCWD, "/usr/lib/locale/en_US.utf8/LC_IDENTIFICATION", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+9272  openat(AT_FDCWD, "/usr/lib/locale/en_US/LC_IDENTIFICATION", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+9272  openat(AT_FDCWD, "/usr/lib/locale/en.UTF-8/LC_IDENTIFICATION", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+9272  openat(AT_FDCWD, "/usr/lib/locale/en.utf8/LC_IDENTIFICATION", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+9272  openat(AT_FDCWD, "/usr/lib/locale/en/LC_IDENTIFICATION", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+9272  getresuid([1000], [1000], [1000]) = 0
+9272  getresgid([1000], [1000], [1000]) = 0
+9272  rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+9272  rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f46b0a3e4d0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+9272  rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f46b0a3e4d0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f46b0a3e4d0}, 8) = 0
+9272  rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f46b0a3e4d0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+9272  rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f46b0a3e4d0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f46b0a3e4d0}, 8) = 0
+9272  rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f46b0a3e4d0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+9272  rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f46b0a3e4d0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f46b0a3e4d0}, 8) = 0
+9272  rt_sigaction(SIGTSTP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f46b0a3e4d0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+9272  rt_sigaction(SIGTSTP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f46b0a3e4d0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f46b0a3e4d0}, 8) = 0
+9272  rt_sigaction(SIGTTIN, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f46b0a3e4d0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+9272  rt_sigaction(SIGTTIN, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f46b0a3e4d0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f46b0a3e4d0}, 8) = 0
+9272  rt_sigaction(SIGTTOU, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f46b0a3e4d0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+9272  rt_sigaction(SIGTTOU, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f46b0a3e4d0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f46b0a3e4d0}, 8) = 0
+9272  rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+9272  rt_sigaction(SIGQUIT, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f46b0a3e4d0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f46b0a3e4d0}, 8) = 0
+9272  uname({sysname="Linux", nodename="DESKTOP-A5I3J1B", ...}) = 0
+9272  newfstatat(AT_FDCWD, "/home/raphael/Github/docker-workshop", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+9272  newfstatat(AT_FDCWD, ".", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+9272  newfstatat(AT_FDCWD, "/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+9272  newfstatat(AT_FDCWD, "/home/raphael", {st_mode=S_IFDIR|0700, st_size=4096, ...}, 0) = 0
+9272  newfstatat(AT_FDCWD, "/home/raphael/Github", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+9272  newfstatat(AT_FDCWD, "/home/raphael/Github/docker-workshop", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+9272  getpid()                          = 9272
+9272  getppid()                         = 9270
+9272  newfstatat(AT_FDCWD, ".", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+9272  newfstatat(AT_FDCWD, "/home/raphael/.vscode-server/bin/c9d77990917f3102ada88be140d28b038d1dd7c7/bin/remote-cli/sh", 0x7ffe03eef950, 0) = -1 ENOENT (No such file or directory)
+9272  newfstatat(AT_FDCWD, "/usr/local/sbin/sh", 0x7ffe03eef950, 0) = -1 ENOENT (No such file or directory)
+9272  newfstatat(AT_FDCWD, "/usr/local/bin/sh", 0x7ffe03eef950, 0) = -1 ENOENT (No such file or directory)
+9272  newfstatat(AT_FDCWD, "/usr/sbin/sh", {st_mode=S_IFREG|0755, st_size=1162312, ...}, 0) = 0
+9272  newfstatat(AT_FDCWD, "/usr/sbin/sh", {st_mode=S_IFREG|0755, st_size=1162312, ...}, 0) = 0
+9272  geteuid()                         = 1000
+9272  getegid()                         = 1000
+9272  getuid()                          = 1000
+9272  getgid()                          = 1000
+9272  access("/usr/sbin/sh", X_OK)      = 0
+9272  newfstatat(AT_FDCWD, "/usr/sbin/sh", {st_mode=S_IFREG|0755, st_size=1162312, ...}, 0) = 0
+9272  geteuid()                         = 1000
+9272  getegid()                         = 1000
+9272  getuid()                          = 1000
+9272  getgid()                          = 1000
+9272  access("/usr/sbin/sh", R_OK)      = 0
+9272  getpid()                          = 9272
+9272  getppid()                         = 9270
+9272  getpid()                          = 9272
+9272  getppid()                         = 9270
+9272  getpgrp()                         = 9270
+9272  ioctl(2, TIOCGPGRP, [9270])       = 0
+9272  rt_sigaction(SIGCHLD, {sa_handler=0x633a6f75bcb0, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f46b0a3e4d0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f46b0a3e4d0}, 8) = 0
+9272  prlimit64(0, RLIMIT_NPROC, NULL, {rlim_cur=31097, rlim_max=31097}) = 0
+9272  rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+9272  rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+9272  openat(AT_FDCWD, "arquivo.txt", O_WRONLY|O_CREAT|O_APPEND, 0666) = 3
+9272  fcntl(1, F_GETFD)                 = 0
+9272  fcntl(1, F_DUPFD, 10)             = 10
+9272  fcntl(1, F_GETFD)                 = 0
+9272  fcntl(10, F_SETFD, FD_CLOEXEC)    = 0
+9272  dup2(3, 1)                        = 1
+9272  close(3)                          = 0
+9272  fstat(1, {st_mode=S_IFREG|0644, st_size=15, ...}) = 0
+9272  write(1, "Mais uma linha\n", 15)  = 15
+9272  dup2(10, 1)                       = 1
+9272  fcntl(10, F_GETFD)                = 0x1 (flags FD_CLOEXEC)
+9272  close(10)                         = 0
+9272  exit_group(0)                     = ?
+9272  +++ exited with 0 +++
