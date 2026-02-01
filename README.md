@@ -141,6 +141,24 @@ docker build -t hello-py:local -f hello/Dockerfile hello-py
 - O arquivo Dockerfile está localizado no diretório `hello-py`
 - O contexto de build é o diretório `hello-py` (arquivos copiados via instrução `COPY` são relativos a esse diretório)
 
+#### Caching
+
+Vamos executar o comando de build da seção anterior novamente. Por que agora o processo é muito mais rápido? Porque o Docker utiliza um sistema de cache para evitar a reexecução de etapas que não sofreram alterações desde o último build. 
+
+Cada instrução no Dockerfile cria uma camada (layer) na imagem, e se uma camada já foi construída e não houve mudanças nas instruções anteriores, o Docker reutiliza essa camada do cache.
+
+Podemos ver as camadas da imagem `hello-py:local` com o comando
+
+```bash
+docker history hello-py:local
+```
+
+Para limpar o cache de build, execute
+
+```bash
+docker builder prune --all
+```
+
 ### Container
 
 "Container é um sistema de arquivos criado a partir de uma imagem onde será executado um processo isolado de todo o resto do ambiente"
@@ -223,3 +241,19 @@ docker container rm sleep-py
 Agora faça um experimento: comente a linha do `ENTRYPOINT` no Dockerfile da imagem `hello-py`, faça o build novamente e execute o container. Por que o container parou sua execução?  
 
 Por que não há mais um processo persitente no seu ponto de partida! Exemplos de processos persistentes são servidores web, bancos de dados, shells interativos, etc.
+
+### Docker Compose
+
+#### Motivação
+
+O uso de comandos "puros" de requisição do Docker Client que usamos até agora (docker build, docker run, etc) pode se tornar complexo e difícil de manter. 
+
+É comum que muitos parâmetros sejam necessários tanto para construir uma imagem quanto para executar um container.
+
+#### O que é?
+
+O Docker Compose é uma ferramenta que possibilita a definição e execução de aplicações multi-container através de um arquivo de configuração no formato YAML chamado `docker-compose.yml`.
+
+#### Um produz, e o outro consome
+
+...
