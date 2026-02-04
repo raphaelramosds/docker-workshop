@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Criar schema
+psql -U ${POSTGRES_USER} -d ${POSTGRES_DB} -c "DROP SCHEMA ${POSTGRES_DB} CASCADE; CREATE SCHEMA ${POSTGRES_DB};"
+
+# Criar tabelas
+psql -U ${POSTGRES_USER} -d ${POSTGRES_DB} -v ON_ERROR_STOP=1 -f "/etc/scripts/migracoes.sql" || break
