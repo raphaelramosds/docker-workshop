@@ -1,4 +1,28 @@
 services:
+  template: &template
+    depends_on:
+      - redis
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - REDIS_PASSWORD=local
+
+  consumer:
+    <<: *template
+    image: my_consumer
+    build:
+      context: .
+      dockerfile: Consumer.dockerfile
+    container_name: "consumer"
+
+  producer:
+    <<: *template
+    image: my_producer
+    build:
+      context: .
+      dockerfile: Producer.dockerfile
+    container_name: "producer"
+
   redis:
     image: "redis:alpine"
     container_name: "redis"
