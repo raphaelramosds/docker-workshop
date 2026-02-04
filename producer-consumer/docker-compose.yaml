@@ -1,12 +1,13 @@
-services:
-  template: &template
-    depends_on:
-      - redis
-    environment:
-      - REDIS_HOST=redis
-      - REDIS_PORT=6379
-      - REDIS_PASSWORD=local
+x-template:
+  &template
+  depends_on:
+    - redis
+  environment:
+    - REDIS_HOST=redis
+    - REDIS_PORT=6379
+    - REDIS_PASSWORD=local
 
+services:
   consumer:
     <<: *template
     image: my_consumer
@@ -24,7 +25,7 @@ services:
     container_name: "producer"
 
   redis:
-    image: "redis:alpine"
+    image: "redis"
     container_name: "redis"
     command: redis-server --requirepass local 
     ports:
