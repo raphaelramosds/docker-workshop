@@ -16,18 +16,12 @@ Este repositório contém exemplos e exercícios práticos para o treinamento de
 
 [![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](./hello-py/) **Nossa própria imagem, "Hello World!**
 - Exemplo simples em Python com Docker
-- Contém `Dockerfile` e `hello.py` em `hello-py/`
-- Como rodar: `docker build -t hello-py ./hello-py && docker run --rm hello-py`
+- Demonstra como criar uma imagem
 
 [![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)](./producer-consumer/) **Um produz, o outro consume**
 - Exemplo de producer/consumer usando Redis
-- Contém `Producer.dockerfile`, `Consumer.dockerfile`, `docker-compose.yaml` e código Go em `producer/` e `consumer/`
-- Como rodar: `docker compose up --build` (a partir de `producer-consumer/`)
+- Demonstra a facilidade de controlar containers com Docker Compose
 
-
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white)](./postgres-server/) **Persistindo os registros de um banco de dados**
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white)](./postgres-server/) **Persistindo os registros de um DB**
 - Serviço PostgreSQL com script de migrações
-- Contém `docker-compose.yaml` e scripts em `scripts/`
-- Como rodar: `docker compose up -d` (a partir de `postgres-server/`)
-
-
+- Demonstra o uso de volumes para persistência de dados

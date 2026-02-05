@@ -8,7 +8,8 @@ services:
     ports:
       - "5439:5432"
     volumes:
-      - pgdata:/var/lib/postgresql/data
+      # Persistencia dos dados (comente essa linha e perca os dados ao reiniciar o container)
+      # - pgdata:/var/lib/postgresql/data
       - ./scripts:/etc/scripts/
 
 volumes:

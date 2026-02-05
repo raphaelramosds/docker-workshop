@@ -13,6 +13,10 @@ CREATE TABLE IF NOT EXISTS products (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+TRUNCATE TABLE users;
+
+TRUNCATE TABLE products;
+
 INSERT INTO users (name, email) VALUES
 ('Alice Smith', 'alice@example.com'),
 ('Bob Johnson', 'bob@example.com'),
