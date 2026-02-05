@@ -1,0 +1,21 @@
+#!/bin/sh
+
+set -e
+
+PROCESS="$1"
+
+if [ -z "$PROCESS" ]; then
+  echo "Usage: $0 <producer|consumer>"
+  exit 1
+fi
+
+if [ "$PROCESS" != "producer" ] && [ "$PROCESS" != "consumer" ]; then
+  echo "Invalid argument: $PROCESS. Must be either 'producer' or 'consumer'."
+  exit 1
+fi
+
+# Start Redis server
+docker compose up -d redis
+
+# Execute 
+bash -c "cd $PROCESS && REDIS_HOST=localhost REDIS_PORT=6379 REDIS_PASSWORD=local go run main.go"

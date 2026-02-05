@@ -1,9 +1,10 @@
 # Build stage
-FROM golang:1.20-alpine AS builder
+FROM golang:1.25-alpine AS builder
 
 WORKDIR /src
 
-COPY consumer/main.go go.mod go.sum ./
+COPY go.mod go.sum ./
+COPY consumer/main.go ./
 
 RUN go mod download
 RUN CGO_ENABLED=0 GOOS=linux go build -o /bin/consumer

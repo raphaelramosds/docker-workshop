@@ -10,22 +10,26 @@ x-template:
 services:
   consumer:
     <<: *template
-    image: my_consumer
+    image: consumer:local 
     build:
       context: .
       dockerfile: Consumer.dockerfile
     container_name: "consumer"
+    # FIXIT workaround para o consumidor iniciar apos o produtor
+    # Eh necessario corrigir isso na implementacao do consumidor
+    depends_on:
+      - producer
 
   producer:
     <<: *template
-    image: my_producer
+    image: producer:local
     build:
       context: .
       dockerfile: Producer.dockerfile
     container_name: "producer"
 
   redis:
-    image: "redis"
+    image: "redis:alpine"
     container_name: "redis"
     command: redis-server --requirepass local 
     ports:
