@@ -5,6 +5,7 @@ FROM python:3.11-slim
 ENV PYTHONUNBUFFERED=1
 
 # Camadas intermediárias
+RUN pip install --no-cache-dir flask tqdm
 WORKDIR /usr/local
 COPY hello.py .
 
