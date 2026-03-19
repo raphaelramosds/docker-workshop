@@ -29,7 +29,3 @@ Este repositório contém exemplos e exercícios práticos para o treinamento de
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white)](./postgres-server/) **Persistindo os registros de um DB**
 - Serviço PostgreSQL com script de migrações
 - Demonstra o uso de volumes para persistência de dados
-
-[![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)](./intro-so/) **Prática de Sistema Operacional**
-- Exercício com comandos UNIX e análise de chamadas de sistema com strace
-- Inclui arquivos de exemplo para observação de interação com o kernel
